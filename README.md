@@ -1,6 +1,18 @@
 # SkyPaws Mobile app
 
-## Description
+## Project Description
+В проекте используются следующие библиотеки:
+* Jetpack Compose
+* Room
+* OkHttp + Retrofit
+* Hilt для DI
+* Junit(4) и mockk
+
+Настроен gitlab CI для создания apk артефакта с использованием gitlab secure files и с отправкой файла apk и данных по версии приложения на сервер (для ручного обновления приложения пользователем).
+<img src="images/CI.png">
+<img src="images/CI_assemble.png"> 
+
+## App Description
 ### Authentication & Authorization
 Аутентификация и авторизация возможны только для работников авиакомпании.  
 При различных ошибках (ошибки сервера, отсуствие интернета или неверные данные для входа) отображается уведомление
