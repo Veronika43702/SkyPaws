@@ -1,0 +1,146 @@
+package ru.skypaws.data.source.entity
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+import ru.skypaws.data.source.dto.LogbookFlightDto
+
+@Entity
+data class LogbookFlightEntity(
+    val year: Int = 0,
+    val month: Int = 0,
+    @PrimaryKey
+    val dateFlight: String= "",
+    val dateLandingPlan: String = "",
+    val flight: String = "",
+    val airportTakeoff: String = "",
+    val airportLanding: String = "",
+    val airportTakeoffCode: String = "",
+    val airportLandingCode: String = "",
+    val plnType: String? = null,
+    val pln: String? = null,
+    val chair: String? = null,
+    val chairCode: String? = null,
+    val timeFlight: Int = 0,
+    val timeBlock: Int = 0,
+    val timeNight: Int = 0,
+    val timeBiologicalNight: Int = 0,
+    val timeWork: Int = 0,
+    val type: Int = 0,
+    val latTo: Double = 0.0,
+    val longTo: Double = 0.0,
+    val latLa: Double = 0.0,
+    val longLa: Double = 0.0,
+    val bufferTimeFlight: Int = 0,
+    val independentFlight: Int = 0,
+    val engineAfter: Int = 0,
+    val engineBefore: Int = 0,
+    val workAfter: Int = 0,
+    val workBefore: Int = 0,
+    val rest: Int = 0,
+    val parking: Int = 0,
+    val landings: Int = 0,
+    val distance: Int = 0,
+    val takeoff: Boolean = false,
+    val landing: Boolean = false,
+    val landingsOnDevices: Int = 0,
+    val timeOnDevices: Int = 0,
+    val splittedShift: Boolean = false,
+    val pplsName: String? = null,
+    val pplsCode: String? = null,
+) {
+    fun toDto(): LogbookFlightDto = LogbookFlightDto(
+        year,
+        month,
+        dateFlight,
+        dateLandingPlan,
+        flight,
+        airportTakeoff,
+        airportLanding,
+        airportTakeoffCode,
+        airportLandingCode,
+        plnType,
+        pln,
+        chair,
+        chairCode,
+        timeFlight,
+        timeBlock,
+        timeNight,
+        timeBiologicalNight,
+        timeWork,
+        type,
+        latTo,
+        longTo,
+        latLa,
+        longLa,
+        bufferTimeFlight,
+        independentFlight,
+        engineAfter,
+        engineBefore,
+        workAfter,
+        workBefore,
+        rest,
+        parking,
+        landings,
+        distance,
+        takeoff,
+        landing,
+        landingsOnDevices,
+        timeOnDevices,
+        splittedShift,
+        pplsName,
+        pplsCode
+    )
+
+    companion object {
+        fun fromDto(dto: LogbookFlightDto): LogbookFlightEntity = with(dto) {
+            LogbookFlightEntity(
+                year,
+                month,
+                dateFlight,
+                dateLandingPlan,
+                flight,
+                airportTakeoff,
+                airportLanding,
+                airportTakeoffCode,
+                airportLandingCode,
+                plnType,
+                pln,
+                chair,
+                chairCode,
+                timeFlight,
+                timeBlock,
+                timeNight,
+                timeBiologicalNight,
+                timeWork,
+                type,
+                latTo,
+                longTo,
+                latLa,
+                longLa,
+                bufferTimeFlight,
+                independentFlight,
+                engineAfter,
+                engineBefore,
+                workAfter,
+                workBefore,
+                rest,
+                parking,
+                landings,
+                distance,
+                takeoff,
+                landing,
+                landingsOnDevices,
+                timeOnDevices,
+                splittedShift,
+                pplsName,
+                pplsCode
+            )
+        }
+    }
+
+}
+
+
+fun List<LogbookFlightEntity>.logbookFlightEntityToDto(): List<LogbookFlightDto> = map(LogbookFlightEntity::toDto)
+fun List<LogbookFlightDto>.logbookFlightDtoToEntity(): List<LogbookFlightEntity> =
+    map(LogbookFlightEntity::fromDto)

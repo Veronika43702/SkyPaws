@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SignInUp_filled_text" parent="AppTheme">
+        <item name="android:textColor">@color/black_white</item>
+        <item name="android:textSize">@dimen/medium_text</item>
+    </style>
+
+    <style name="SmallTextButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textSize">@dimen/small_medium_text</item>
+        <item name="android:layout_height">@dimen/textSM_layout_height</item>
+        <item name="android:textColor">@color/text_on_background</item>
+    </style>
+
+    <style name="NormalButton" parent="Widget.Material3.Button">
+        <item name="android:textSize">@dimen/normal_text</item>
+    </style>
+
+    <style name="SmallButton" parent="Widget.Material3.Button">
+        <item name="android:textSize">@dimen/small_medium_text</item>
+    </style>
+
+    <style name="Flight" parent="AppTheme">
+        <item name="android:textSize">@dimen/normal_text</item>
+        <item name="android:textColor">@color/apptheme_onSecondaryContainer_textOnFlight</item>
+    </style>
+
+    <style name="SmallTextFlights" parent="Flight">
+        <item name="android:textSize">@dimen/medium_text</item>
+    </style>
+
+    <style name="LargeBoldTextFlights" parent="Flight">
+        <item name="android:textSize">@dimen/normal_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NormalBoldTextFlights" parent="Flight">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Settings" parent="AppTheme">
+        <item name="android:textSize">@dimen/normal_text</item>
+    </style>
+
+    <style name="SmallTextSettings" parent="Settings">
+        <item name="android:textSize">@dimen/medium_text</item>
+    </style>
+
+    <style name="LargeBoldTextSettings" parent="Settings">
+        <item name="android:textSize">@dimen/settings_titles</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Card_titiles" parent="AppTheme">
+        <item name="android:textSize">@dimen/cards_titles</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NormalBoldTextSettings" parent="Settings">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MenuItemsTheme" parent="@style/Widget.MaterialComponents.PopupMenu">
+        <item name="android:background">@color/apptheme_surfaceContainer_menuBackground</item>
+        <item name="android:tint">@color/apptheme_menu_title</item>
+        <item name="android:textColor">@color/apptheme_menu_items</item>
+    </style>
+
+    <style name="menu_background" parent="@style/AppTheme">
+        <item name="android:background">@color/apptheme_backgroundAppBar</item>
+        <item name="android:tint">@color/apptheme_menu_title</item>
+    </style>
+
+    <style name="CircleImageView" parent="AppTheme">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">55%</item>
+    </style>
+
+    <style name="title_nav_menu_Medium" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Logbook" parent="AppTheme">
+        <item name="android:textSize">@dimen/logbook_text</item>
+        <item name="android:textColor">@color/apptheme_onSecondaryContainer_textOnFlight</item>
+    </style>
+</resources>

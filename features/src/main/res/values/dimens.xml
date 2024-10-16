@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_spacing">16dp</dimen>
+    <dimen name="dialog_spacing">24dp</dimen>
+    <dimen name="vertical_spacing">8dp</dimen>
+    <dimen name="horizontal_spacing">8dp</dimen>
+    <dimen name="marginForEvent">4dp</dimen>
+    <dimen name="status">8dp</dimen>
+    <dimen name="min_spacing">3dp</dimen>
+    <dimen name="zero_spacing">1dp</dimen>
+    <dimen name="small_text">12sp</dimen>
+    <dimen name="small_medium_text">16sp</dimen>
+    <dimen name="medium_text">18sp</dimen>
+    <dimen name="normal_text">19sp</dimen>
+    <dimen name="large_text">24sp</dimen>
+
+    <dimen name="settings_titles">20sp</dimen>
+
+    <dimen name="cards_titles">24sp</dimen>
+
+    <dimen name="LARGE_text">28sp</dimen>
+    <dimen name="textSM_layout_height">40sp</dimen>
+    <dimen name="settings">56dp</dimen>
+
+    <dimen name="titleMargin_NavMenu">12dp</dimen>
+
+    <dimen name="logbook_item_VerticalPadding">12dp</dimen>
+    <dimen name="logbook_icon">24dp</dimen>
+    <dimen name="logbook_title_verticalPadding">4dp</dimen>
+    <dimen name="logbook_name_width">70dp</dimen>
+    <dimen name="logbook_number_width">78dp</dimen>
+    <dimen name="logbook_text">18sp</dimen>
+
+    <dimen name="icon">28dp</dimen>
+</resources>

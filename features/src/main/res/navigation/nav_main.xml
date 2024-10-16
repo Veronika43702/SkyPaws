@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/enterFragmentNav">
+
+    <fragment
+        android:id="@+id/enterFragmentNav"
+        android:name="ru.skypaws.mobileapp.activity.FragmentEnter"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_enter">
+
+        <action
+            android:id="@+id/action_signInFragment_to_fragmentFlights"
+            app:destination="@id/fragmentCrewPlanNav"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_enterFragmentNav_to_fragmentLoading"
+            app:destination="@id/fragmentLoadingNav" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentCrewPlanNav"
+        android:name="ru.skypaws.mobileapp.activity.FragmentCrewPlan"
+        android:label="FragmentFlights">
+        <action
+            android:id="@+id/action_fragmentFlights_to_fragmentSettings"
+            app:destination="@id/fragmentSettingsNav"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_fragmentCrewPlanNav_to_fragmentLogbook"
+            app:destination="@id/fragmentLogbookNav"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSettingsNav"
+        android:name="ru.skypaws.mobileapp.activity.FragmentSettings"
+        android:label="FragmentSettings" />
+    <fragment
+        android:id="@+id/fragmentLogbookNav"
+        android:name="ru.skypaws.mobileapp.activity.FragmentLogbook"
+        android:label="FragmentLogbook" />
+    <fragment
+        android:id="@+id/fragmentLoadingNav"
+        android:name="ru.skypaws.mobileapp.activity.FragmentLoading"
+        android:label="FragmentLoading" >
+        <action
+            android:id="@+id/action_fragmentLoading_to_fragmentCrewPlanNav"
+            app:destination="@id/fragmentCrewPlanNav" />
+    </fragment>
+
+</navigation>

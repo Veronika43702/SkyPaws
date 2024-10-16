@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="durationMonth">
+        <item quantity="one">%d month</item>
+        <item quantity="few">%d months</item>
+        <item quantity="many">%d months</item>
+        <item quantity="other">%d months</item>
+    </plurals>
+
+    <plurals name="durationSincePaymentDay">
+        <item quantity="one">%d month since payment date</item>
+        <item quantity="few">%d months since payment date</item>
+        <item quantity="many">%d months since payment date</item>
+        <item quantity="other">%d months since payment date</item>
+    </plurals>
+</resources>

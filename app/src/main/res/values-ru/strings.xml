@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SkyPaws</string>
+    <string name="username">логин Aviabit</string>
+    <string name="password">пароль Aviabit</string>
+    <string name="confirm_password">подтвердите пароль</string>
+    <string name="company">авиакомпания</string>
+    <string name="enter">ВХОД</string>
+    <string name="login">ВОЙТИ</string>
+    <string name="logo">логотип</string>
+    <string name="create_new_account">РЕГИСТРАЦИЯ</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="next">ДАЛЕЕ</string>
+    <string name="aviabit_email">эл. почта от Aviabit</string>
+    <string name="send_code">ОТПРАВИТЬ КОД</string>
+    <string name="code">код</string>
+    <string name="passwordDiff">Пароли не совпадают</string>
+    <string name="company_email">эл. почта компании</string>
+    <string name="search">поиск</string>
+    <string name="flights">Полеты</string>
+    <string name="sign_out">Выйти</string>
+    <string name="logbook">Logbook</string>
+    <string name="calendar">Google Calendar</string>
+    <string name="settings">Настройки</string>
+    <string name="version">Версия: %s</string>
+    <string name="areYouSure">Вы уверены, что хотите выйти?</string>
+    <string name="back">Назад</string>
+
+    <string name="serverNotWork">Сервер временно недоступен. Попробуйте позже</string>
+    <string name="wrongEmailPass">Неправильный логин и/или пароль</string>
+    <string name="error_loading">Что-то пошло не так. Попробуйте позже</string>
+    <string name="retry_loading">ПОВТОРИТЬ</string>
+    <string name="retry">ПОВТОРИТЬ</string>
+
+    <string name="choose_theme">Выберите тему</string>
+    <string name="check_updates">Проверить обновления</string>
+    <string name="theme">Тема</string>
+
+    <string name="cancel">Отмена</string>
+    <string name="ok">ОК</string>
+
+    <string name="light">Светлая</string>
+    <string name="dark">Темная</string>
+    <string name="system">Системная (по умолчанию)</string>
+    <string name="code_sent">код отправлен</string>
+    <string name="userExists">Пользователь с таким логином и паролем уже существует</string>
+    <string name="wrongCode">неверный код</string>
+    <string name="block">block</string>
+    <string name="flight">flight</string>
+    <string name="error_aviabit">Сервер Aviabit не отвечает. Попробуйте позже</string>
+    <string name="airport_type_to_view">Формат кода аэропортов</string>
+    <string name="iata">IATA (VKO, LED, SVO)</string>
+    <string name="icao">ICAO (UUWW, ULLI, UUEE)</string>
+    <string name="inside_code">Внутренний код (ВНК, ПЛК, ШРМ)</string>
+    <string name="crew_plan">Мой план</string>
+    <string name="error_no_internet">Отсуствует интернет соединение. Обновление данных недоступно.</string>
+    <string name="enter_with_code">ВОЙТИ С КОДОМ</string>
+
+    <string name="aviabitNotWork">Сервер Aviabit временно недоступен. Попробуйте позже</string>
+    <string name="unableToLoadData">Не удалось загрузить данные. Попробуйте позже.</string>
+
+    <string name="total">всего</string>
+    <string name="calculated">calculated</string>
+    <string name="planned">planned</string>
+    <string name="actual">actual</string>
+    <string name="ETT">ETT</string>
+    <string name="ELT">ELT</string>
+    <string name="ETA">ETA</string>
+    <string name="ETD">ETD</string>
+    <string name="ATT">ATT</string>
+    <string name="ALT">ALT</string>
+    <string name="ATA">ATA</string>
+    <string name="ATD">ATD</string>
+    <string name="userNotFound">Пользователь не найден в Aviabit</string>
+    <string name="aviabit_loading">Загрузка данных из Aviabit</string>
+    <string name="jan">Янв</string>
+    <string name="feb">Фев</string>
+    <string name="mar">Мар</string>
+    <string name="apr">Апр</string>
+    <string name="may">Май</string>
+    <string name="jun">Июн</string>
+    <string name="jul">Июл</string>
+    <string name="aug">Авг</string>
+    <string name="sep">Сен</string>
+    <string name="oct">Окт</string>
+    <string name="nov">Ноя</string>
+    <string name="dec">Дек</string>
+    <string name="night">night</string>
+
+    <string name="mon">пн</string>
+    <string name="tue">вт</string>
+    <string name="wed">ср</string>
+    <string name="thu">чт</string>
+    <string name="fri">пт</string>
+    <string name="sat">сб</string>
+    <string name="sun">вс</string>
+    <string name="sign_out_card_titile">Выход</string>
+    <string name="update_avalable">Доступно обновление. Скачать</string>
+    <string name="update_app">Обновите приложение</string>
+    <string name="update">Обновить</string>
+    <string name="update_forced_explanation">Данная версия приложения больше не поддерживается. Обновите приложение до новой версии.</string>
+    <string name="download_error">Не удалось скачать файл. Скачать заново.</string>
+    <string name="download_finished_update">Загрузка завершена. Обновить</string>
+    <string name="downloading">Загрузка...</string>
+    <string name="updating">Обновление</string>
+
+
+    <string name="paid_Service">Платная услуга</string>
+    <string name="pay">Оплатить</string>
+    <string name="price">%dр.</string>
+    <string name="period_text">Период доступа к скачиванию:</string>
+
+    <string name="service_paid">Услуга оплачена</string>
+    <string name="activated_until">Активно до:\n%s (включая)</string>
+    <string name="discount">Скидка: %dр.</string>
+    <string name="service_expire_UTC">Услуга активна до %s 23:59 UTC</string>
+
+    <string name="logbook_download">Скачать Logbook</string>
+    <string name="logbook_formats">После оплаты вы получаете доступ к скачиванию Logbook в следующих форматах:</string>
+    <string name="logbook_other">В течение оплаченного срока возможно обновлять Logbook с актуальными данными</string>
+    <string name="logbook_warning">В случае отсутствия доступа к Aviabit по вашим данным (при увольнении) вход в аккаунт невозможен, что ведет к невозможности скачивания Logbook.</string>
+
+    <string name="select">Выбрать</string>
+    <string name="select_All">Выбрать все</string>
+    <string name="deselect_All">Снять выбор</string>
+    <string name="download">Скачать</string>
+    <string name="share">Поделиться</string>
+    <string name="paid_services">Платные услуги</string>
+    <string name="paid_until">Оплачено до: %s (включая)</string>
+    <string name="path_to_download">Папка для сохранения файлов</string>
+    <string name="fileDownloaded">Файл успешно сохранен в %s</string>
+
+</resources>

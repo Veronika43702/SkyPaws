@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="durationMonth">
+        <item quantity="one">За %d месяц</item>
+        <item quantity="few">За %d месяца</item>
+        <item quantity="many">За %d месяцев</item>
+        <item quantity="other">За %d месяцев</item>
+    </plurals>
+
+    <plurals name="durationSincePaymentDay">
+        <item quantity="one">%d месяц с даты оплаты</item>
+        <item quantity="few">%d месяца с даты оплаты</item>
+        <item quantity="many">%d месяцев с даты оплаты</item>
+        <item quantity="other">%d месяцев с даты оплаты</item>
+    </plurals>
+</resources>
