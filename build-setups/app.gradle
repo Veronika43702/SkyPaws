@@ -1,0 +1,52 @@
+apply from: "$rootDir/build-setups/ext.gradle"
+
+android {
+    defaultConfig {
+        applicationId bundle_name
+        minSdk min_sdk
+        targetSdk target_sdk
+        versionCode version_code
+        versionName version_name
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+
+        buildConfigField("int", "DB_VERSION", "1")
+    }
+
+    signingConfigs {
+        named("debug") {
+            storeFile = file("debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            signingConfig = signingConfigs["debug"]
+        }
+    }
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes += 'META-INF/gradle/incremental.annotation.processors'
+        }
+    }
+
+    buildFeatures {
+        buildConfig = true
+    }
+}
+
+hilt {
+    enableAggregatingTask = true
+}

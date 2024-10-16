@@ -1,0 +1,19 @@
+apply from: "$rootDir/build-setups/ext.gradle"
+
+android {
+    compileSdk compile_sdk
+
+    defaultConfig {
+        minSdk min_sdk
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_22
+        targetCompatibility JavaVersion.VERSION_22
+    }
+    kotlinOptions {
+        jvmTarget = "22"
+    }
+}

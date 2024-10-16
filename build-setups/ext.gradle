@@ -1,0 +1,11 @@
+ext {
+    bundle_name = "ru.skypaws.modileapp"
+    version_code = 1
+    version_name = "0.1.6"
+
+    compile_sdk = 34
+    min_sdk = 28
+    target_sdk = 34
+
+    version_db = 1
+}
